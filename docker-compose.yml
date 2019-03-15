@@ -1,0 +1,5 @@
+version: '3'
+services:
+  docker-container-nodeserver:
+    build: .
+    image: nodeserver-dockercontainer:latest

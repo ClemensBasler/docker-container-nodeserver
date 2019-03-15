@@ -64,3 +64,21 @@ The --net="host" option is needed, that the container can access to the network 
 
 <b>stop an running container/image</b>
 - docker stop [Container ID]
+
+### Docker behind a proxy
+
+Add to the ~/.docker/config.json file the proxy settings:
+
+```json
+{
+ "proxies":
+ {
+   "default":
+   {
+     "httpProxy": "http://127.0.0.1:3001",
+     "httpsProxy": "http://127.0.0.1:3001",
+     "noProxy": "*.test.example.com,.example2.com"
+   }
+ }
+}
+```
