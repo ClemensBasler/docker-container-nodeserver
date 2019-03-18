@@ -3,3 +3,5 @@ services:
   docker-container-nodeserver:
     build: .
     image: nodeserver-dockercontainer:latest
+    ports:
+      - "4000:80"
