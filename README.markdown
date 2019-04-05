@@ -82,3 +82,11 @@ Add to the ~/.docker/config.json file the proxy settings:
  }
 }
 ```
+
+### Errors:
+    Service 'docker-container-nodeserver' failed to build: 
+    Get https://registry-1.docker.io/v2/: 
+    proxyconnect tcp: dial tcp 123.456.78.90:80: connect: no route to host
+=> restart Docker
+
+
